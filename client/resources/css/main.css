@@ -1,0 +1,808 @@
+/* 공통 */
+.logo {
+  font-size: 2.4rem;
+  font-family: "KoPubDotumBold_0";
+}
+
+header .page-title span {
+  font-family: "KoPubDotumBold_0";
+  font-size: 2.2rem;
+}
+
+.page-title svg {
+  display: none;
+}
+
+/* -----------------------------------------------지자체 */
+
+.map {
+  width: 100%;
+  height: calc(100% - 31px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.statistics li {
+  width: 30%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.statistics li:nth-child(1) {
+  border-bottom: 5px solid #18924e;
+}
+
+.statistics li:nth-child(2) {
+  border-bottom: 5px solid #ec220c;
+}
+
+.statistics li:nth-child(3) {
+  border-bottom: 5px solid #2132e3;
+}
+
+.statistics li p:nth-of-type(1) {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.statistics li p:nth-of-type(2) {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.statistics li p:nth-of-type(2)::after {
+  content: "명";
+}
+
+.main-grid-government>div:nth-child(3)>div:nth-child(1) {
+  margin-top: 1rem;
+  padding: 0 5rem;
+}
+
+.main-battery-title span::after {
+  content: " 님의";
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.combine-right-government h4::before {
+  content: "김복남 님의";
+  margin-right: 1rem;
+  font-size: 1.4rem;
+}
+
+.main-battery-title {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.map svg {
+  display: block;
+}
+
+.temp p {
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(103, 132, 220);
+  text-align: center;
+}
+
+.battery p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(255, 121, 121);
+  text-align: center;
+}
+
+.battery::after {
+  content: " 남았습니다.";
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 9rem;
+}
+
+#chartdiv1 {
+  height: 20vh;
+}
+
+/* ------------------------------------------------보호자 */
+/* ------------------------------------- main page --------------------------------- */
+/* 사용자 정보*/
+.user-img {
+  width: 150px;
+  height: 150px;
+  background-color: #d8d8d8;
+  margin: auto;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.user-name-wrap,
+.user-img {
+  margin-bottom: 1rem;
+}
+
+.user-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.user-grade {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fdb0b0;
+  margin-left: 0.5rem;
+}
+
+.user-bir,
+.user-pnum,
+.user-add {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.user-add {
+  margin-bottom: 0;
+}
+
+/* 보호사 정보 */
+.caregiver-info p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.caregiver-info span {
+  font-weight: normal;
+}
+
+.caregiver-info p:nth-of-type(4) {
+  margin-bottom: 0;
+}
+
+/* 날씨 api */
+#fullDate,
+#temp {
+  font-size: 1.6rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+#temp {
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-img {
+  display: block;
+  margin: auto;
+}
+
+/* ------------------------------------- login page --------------------------------- */
+
+/* login */
+.login-wrap {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #f8f8f8;
+}
+
+.login-wrap h1 {
+  max-width: 100%;
+  text-align: center;
+  padding: 3rem;
+  font-size: 2.4rem;
+  background: #242d2e;
+  color: #ffffff;
+}
+
+.login-form h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.login-form {
+  width: 500px;
+  padding: 5rem 3rem;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+.login-form .login-inner {
+  margin-bottom: 2rem;
+}
+
+.login-form .login-inner .content {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.login-form .login-inner .fa-solid {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #eee;
+}
+
+.login-form .login-inner input {
+  outline: none;
+  border: 0;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background: #eee;
+}
+
+.btn-bottom {
+  margin-top: 2rem;
+  border-top: 1px solid #eeeeee;
+}
+
+.join-login {
+  height: calc(100% - 92px);
+}
+
+/* ------------------------------------- 회원가입 page --------------------------------- */
+.join-group {
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+
+.join-group h3 {
+  width: 100%;
+  font-size: 2rem;
+  padding: 3rem;
+  background: #f0ebe3;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.join-inner {
+  margin: 0 auto;
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+
+.join-inner input {
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.join-inner #id {
+  max-width: 65%;
+  margin-right: 1rem;
+}
+
+/* ------------------------------------- 상세페이지들 --------------------------------- */
+/* 등록창 */
+.insert-table td {
+  padding: 2rem;
+  text-align: left;
+}
+
+/* 검색창 */
+
+.mobile-area-wrap {
+  display: none;
+}
+
+.search-group {
+  margin-bottom: 2rem;
+  box-shadow: 1px 1px 5px 1px rgba(209, 228, 227);
+}
+
+.search-group .btn-box {
+  padding-bottom: 0.5rem;
+}
+
+.detail-search table {
+  border-top: none;
+  border-bottom: none;
+}
+
+.detail-search table th,
+.detail-search table td {
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.detail-search table th {
+  width: 14%;
+}
+
+.detail-search table td {
+  border-top: none;
+}
+
+.detail-search tbody tr:nth-of-type(2) select {
+  width: 27%;
+}
+
+.detail-search tbody tr:nth-of-type(3) td {
+  width: 100%;
+}
+
+.detail-search tbody tr:nth-of-type(3) th:nth-child(3) {
+  width: 23%;
+}
+
+.detail-search tbody tr:nth-of-type(3) td input {
+  margin-right: 1rem;
+}
+
+.area-wrap>div {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.select-area {
+  width: 100%;
+  padding: 1rem;
+  background-color: #d1e4e3;
+}
+
+.search-area {
+  padding: 2rem;
+}
+
+.search-area details {
+  margin-top: 1rem;
+}
+
+.search-area details summary {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.search-line {
+  margin-bottom: 5rem;
+}
+
+.search-group #date {
+  width: 100%;
+}
+
+.area-wrap {
+  margin-bottom: 5rem;
+}
+
+.area {
+  position: relative;
+}
+
+.area>li {
+  padding: 1rem;
+}
+
+.area-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+
+.area-list ul li {
+  width: 100%;
+}
+
+input[type="radio"]#all,
+input[type="radio"]#no1,
+input[type="radio"]#no2,
+input[type="checkbox"]#no3,
+input[type="checkbox"]#no4,
+input[type="checkbox"]#no5,
+input[type="checkbox"]#no6,
+input[type="checkbox"]#no7,
+input[type="checkbox"]#no8 {
+  display: none;
+}
+
+#all:checked~div.area-list,
+#no1:checked~div.area-list,
+#no2:checked~div.area-list,
+#no3:checked~div.area-list,
+#no4:checked~div.area-list,
+#no5:checked~div.area-list,
+#no6:checked~div.area-list,
+#no7:checked~div.area-list,
+#no8:checked~div.area-list {
+  display: block;
+}
+
+.item {
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+.item::after {
+  display: inline-block;
+  content: "\00d7";
+  font-size: 14px;
+  margin-left: 5px;
+
+}
+
+/* 노인등록 */
+.medicine {
+  height: 100px;
+}
+
+.senior-insert label {
+  padding: 0 4rem 0 1rem;
+
+}
+
+.senior-insert tr:nth-child(2) .gender {
+  padding: 2rem 1rem;
+}
+
+#section {
+  width: 100%;
+}
+
+/* 노인 상세 정보 */
+.senior-detail th {
+  text-align: left;
+  width: 15%;
+  border: 6px solid #ffffff;
+  background: #f0ebe3;
+  padding-left: 2rem;
+}
+
+.senior-detail td {
+  text-align: left;
+}
+
+.senior-detail td span {
+  padding-left: 1rem;
+}
+
+
+/* 복약 상세페이지 */
+
+.day-list {
+  height: 700px;
+  padding: 3rem;
+  border: 10px solid #7d9d9c;
+  overflow-y: auto;
+}
+
+.day-list ul li {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.detail-graph {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+
+.medicine-detail-table .btn-wrap {
+  margin: 0;
+}
+
+/* .chart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.3s;
+  background: linear-gradient( to right, yellow, red );
+  display:inline-block;
+}
+
+.chart:after{ 
+  content:'';
+  background: #fff; 
+  position: absolute;
+  top:50%; 
+  left:50%;
+  width:100px; 
+  height:100px; 
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.chart-bar{
+  font-size: 5rem;
+  font-weight: bold;
+  position: absolute;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  z-index: 5;
+} */
+
+/* 복약 수정 페이지 */
+
+.medicine-detail th {
+  font-size: 1.4rem;
+}
+
+.modal-main table th {
+  text-align: center;
+}
+
+.medicine-revise tr:nth-child(3)>td div,
+.medicine-revise tr:nth-child(4)>td div,
+.medicine-revise tr:nth-child(5)>td div {
+  width: 50%;
+}
+
+.medicine-revise tr:nth-child(3)>td div input,
+.medicine-revise tr:nth-child(4)>td div input,
+.medicine-revise tr:nth-child(5)>td div input {
+  width: 20%;
+}
+
+.medicine-revise tr:nth-child(3)>td div label,
+.medicine-revise tr:nth-child(4)>td div label,
+.medicine-revise tr:nth-child(5)>td div label {
+  width: 50%;
+}
+
+/* 방문관리 */
+.visit-content {
+  height: 45%;
+}
+
+.visit-info {
+  max-width: 100%;
+  height: 90%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f8f8f8;
+}
+
+.visit-info ul li div {
+  height: 100%;
+}
+
+.visit-info ul li {
+  font-size: 1.6rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.visit-info ul li p {
+  padding: 1rem;
+  border: 1px solid #7d9d9c;
+  border-radius: 1rem;
+  height: 50%;
+}
+
+/* 방문 수정*/
+.visit-revise tr:nth-child(3) input {
+  width: 2rem;
+}
+
+.visit-revise tr:nth-child(3) label {
+  width: 10rem
+}
+
+/* 방문 상세 */
+.visit-detail th {
+  width: 22%;
+}
+
+/* 방문 등록 */
+.search-visit-insert {
+  margin-bottom: 3rem;
+}
+
+.search-visit-insert button {
+  width: 20%;
+}
+
+.search-visit-insert input {
+  margin-right: 1rem;
+}
+
+/* 장비 관리*/
+.equipment-search {
+  margin-bottom: 1rem;
+}
+
+.select100 {
+  width: 100%;
+}
+
+.equipment-table button {
+  background-color: #ffffff;
+  border: 1px solid #7D9D9C;
+  color: #7D9D9C;
+}
+
+/* 장비등록 */
+.equipment-insert tr:nth-of-type(1) input {
+  width: 5%;
+}
+
+.equipment-insert tr:nth-of-type(1) label {
+  width: 20%;
+}
+
+/* 모달 */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modal-inner {
+  width: 80%;
+  max-width: 650px;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  animation: modal-show 0.3s;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.modal .modal-inner .modal-header {
+  background-color: #f1f1f1;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+/* .modal .modal-inner .modal-header .close {
+  border-radius: 50%;
+  border: 2px solid #333333;
+  background-color: transparent;
+}
+
+.madal .modal-inner .modal-header .close:hover {
+  background-color: #7d9d9c;
+} */
+
+.modal-main {
+  padding: 2rem;
+}
+
+.modal-main table th,
+.modal-main table td {
+  text-align: center;
+}
+
+.modal.openModal {
+  display: flex;
+  align-items: center;
+  animation: modal-bg-show 0.3s;
+}
+
+/* 사용자 관리 */
+.tab-menu {
+  display: flex;
+}
+
+.tab-menu li {
+  width: 200px;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 1px solid #eeeeee;
+}
+
+.tab-menu li.active {
+  font-weight: bold;
+  background-color: #242d2e;
+  color: #ffffff;
+}
+
+.search-management select {
+  width: 15%;
+}
+
+.search-management input {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+.tab-content table th {
+  background-color: #ffffff;
+}
+
+.tab-content table button {
+  background-color: #ffffff;
+  border: 1px solid #7D9D9C;
+  color: #7D9D9C;
+}
+
+.tab-container>div>div:nth-child(2) {
+  margin: 1rem 0;
+}
+
+/* 권한 설정 */
+.authority-table th,
+.authority-table td {
+  padding: 1.5rem;
+}
+
+.authority-table td:last-child {
+  padding: 0;
+}
+
+@keyframes modal-show {
+  from {
+    opacity: 0;
+    margin-top: -50px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes modal-bg-show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* ------------------------------------- 권한 관리 페이지 --------------------------------- */
+/* 권한 버튼 설정 */
+.xbutton {
+  display: inline-block;
+  margin-right: 1rem;
+  width: 90px;
+  height: 40px;
+  border-color: #c2d6eb;
+  background-color: #c2d6eb;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 2px gray;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.xbutton::after{   
+  display: inline-block;
+  content:"\00d7";
+  font-size:13px;
+  line-height: 25px;
+}
+

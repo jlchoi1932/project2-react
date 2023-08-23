@@ -1,0 +1,258 @@
+/* layout 공통 */
+/* grid */
+.main-grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 1rem;
+}
+
+.main-grid-government {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+  gap: 1rem;
+}
+
+.combine-left {
+  grid-column: 1/3;
+}
+
+.combine-left-government {
+  grid-column: 1/4;
+}
+
+.combine-right {
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+.combine-right-government {
+  grid-column: 3/5;
+}
+
+.combine-top-government {
+  grid-row: 1/3;
+}
+
+.combine-all-government {
+  grid-row: 1/5;
+}
+
+.combine-bottom-government {
+  grid-row: 2/5;
+}
+
+
+/* flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-align-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-align-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex10 {
+  flex: 0 0 9.5%;
+}
+
+.flex15 {
+  flex: 0 0 14.5%;
+}
+
+.flex20 {
+  flex: 0 0 19.5%;
+}
+
+.flex25 {
+  flex: 0 0 24.5%;
+}
+
+
+.flex30 {
+  flex: 0 0 29.5%;
+}
+
+.flex40 {
+  flex: 0 0 39.5%;
+}
+
+.flex45 {
+  flex: 0 0 44.5%;
+}
+
+.flex50 {
+  flex: 0 0 49.5%;
+}
+
+.flex60 {
+  flex: 0 0 59.5%;
+}
+
+.flex70 {
+  flex: 0 0 69.5%;
+}
+
+.flex80 {
+  flex: 0 0 79.5%;
+}
+
+.flex85 {
+  flex: 0 0 84.5%;
+}
+
+.flex90 {
+  flex: 0 0 89.5%;
+}
+
+.flex100 {
+  flex: 0 0 100%;
+}
+
+/* width 공통 */
+.width100 {
+  width: 100%;
+}
+
+.width90 {
+  max-width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.width80 {
+  max-width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+/* box 공통 */
+.row {
+  max-width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+}
+
+ /*체크박스 크기*/
+.checkCon {
+  width: 50%;
+}
+
+
+/* button 공통 */
+.btn-wrap {
+  margin-top: 1rem;
+}
+
+.btn-100 {
+  width: 100%;
+  border: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 0.5rem 1.5rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.btn-large {
+  width: 150px;
+  border: 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  padding: 0.5rem 1.5rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.btn-small {
+  border: 0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1rem;
+}
+
+.btn-large:last-child,
+.btn-small:last-child {
+  margin-right: 0;
+}
+
+/* button color */
+.green-btn {
+  background: #7D9D9C;
+}
+
+.beige-btn {
+  background: #e4dccf;
+}
+
+.gray-btn {
+  background: #cccccc;
+}
+
+
+/* margin */
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom2 {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom5 {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom10 {
+  margin-bottom: 10rem;
+}
+
+hr{border-top: 1px solid #d1e4e3; margin-top: 2rem}
+
